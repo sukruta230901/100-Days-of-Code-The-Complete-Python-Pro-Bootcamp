@@ -19,7 +19,7 @@ total_bill_float = float(total_bill)
 each_person_bill = (total_bill_float / people_to_split_int) * each_person_tip
 
 #Formatting the result to 2 decimal places
-each_person_bill_to_pay = round(each_person_bill, 2)
+each_person_bill_to_pay = "{:.2f}".format(each_person_bill)
 
 #printing the result
 print(f"Each person should pay: ${each_person_bill_to_pay}")
